@@ -1,0 +1,27 @@
+For local testing:
+(You must have at least 3 bootstraps in order of the network to work)
+(There is a file named 'inputs.txt', in which I have provided the inputs for the bootstraps if you want to enter them manually, of course you can change
+the port numbers)
+('syncronizer.py'is used to launch the boostraps all at once. If you decide to run the 'syncronizer.py', you must open it first and change the 4 directories)
+
+1. Open 'Local' file
+
+2. You can either run the 'syncronizer.py' and it will automatically set the inputs for each bootstrap node (*Small catch, when you run the synchronizer it 
+will open the 3 bootstraps in the same folder as the synchronizer so the files will not be "distributed", so we recommend you make 3 seperate folders, 
+and paste the project in each one, and then run the 'boot_strap.py' from each one and you should have a working network)
+
+3. For testing the client you must also create a new folder and paste the project inside, run the 'client.py' while the other 3 bootstraps are running and 
+start inserting commands.
+
+
+
+For Online testing: 
+
+(Slower than the local one, becase of synchronization issues and a lot of time.sleep())
+(You can run the 3 bootstraps on 3 computers, or you can run them on 1 computer, as long as there are 3 bootstraps running there will be no problem)
+
+1. I have provided a 'inputs.txt' in which there are the inputs for both online and local.
+   If you decide to run the code on 3 different pc's then instead of the IP's that are set to: 127.0.0.1, you must change them to the public IP adresses of 
+the computers (except the first line which is 0.0.0.0, this remains unchanged)
+
+2. Run the 'client.py' and enjoy! 
